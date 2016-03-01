@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jframework="http://www.mecrt.cn/schema/jframework"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+	http://www.mecrt.cn/schema/jframework http://www.mecrt.cn/schema/jframework/jframework.xsd">
+	<context:property-placeholder location="cpt32api.properties" />
+	<context:annotation-config />
+	<bean id="jctpRole" class="sims2016derive.quotationtranscode.context.util.JConfigRole">
+
+		<property name="marketAddr" value="${ctp32api.base.marketaddr}"></property>
+		<property name="tradeAddr" value="${ctp32api.base.tradeaddr}"></property>
+		<property name="userID" value="${ctp32api.base.userid}"></property>
+		<property name="password" value="${ctp32api.base.password}"></property>
+		<property name="brokerID" value="${ctp32api.base.brokerid}"></property>
+
+		<property name="cffex" value="${ctp32api.subscribe.cffex}"></property>
+		<property name="cffexFutures" value="${ctp32api.subscribe.cffex.futures}"></property>
+		<property name="cffexOptions" value="${ctp32api.subscribe.cffex.options}"></property>
+		<property name="cffexCombination" value="${ctp32api.subscribe.cffex.combination}"></property>
+		<property name="cffexSpot" value="${ctp32api.subscribe.cffex.spot}"></property>
+		<property name="cffexEfp" value="${ctp32api.subscribe.cffex.efp}"></property>
+		<property name="cffexSpotoption" value="${ctp32api.subscribe.cffex.spotoption}"></property>
+
+		<property name="shfe" value="${ctp32api.subscribe.shfe}"></property>
+		<property name="shfeFutures" value="${ctp32api.subscribe.shfe.futures}"></property>
+		<property name="shfeOptions" value="${ctp32api.subscribe.shfe.options}"></property>
+		<property name="shfeCombination" value="${ctp32api.subscribe.shfe.combination}"></property>
+		<property name="shfeSpot" value="${ctp32api.subscribe.shfe.spot}"></property>
+		<property name="shfeEfp" value="${ctp32api.subscribe.shfe.efp}"></property>
+		<property name="shfeSpotoption" value="${ctp32api.subscribe.shfe.spotoption}"></property>
+
+		<property name="dce" value="${ctp32api.subscribe.dce}"></property>
+		<property name="dceFutures" value="${ctp32api.subscribe.dce.futures}"></property>
+		<property name="dceOptions" value="${ctp32api.subscribe.dce.options}"></property>
+		<property name="dceCombination" value="${ctp32api.subscribe.dce.combination}"></property>
+		<property name="dceSpot" value="${ctp32api.subscribe.dce.spot}"></property>
+		<property name="dceEfp" value="${ctp32api.subscribe.dce.efp}"></property>
+		<property name="dceSpotoption" value="${ctp32api.subscribe.dce.spotoption}"></property>
+
+		<property name="czce" value="${ctp32api.subscribe.czce}"></property>
+		<property name="czceFutures" value="${ctp32api.subscribe.czce.futures}"></property>
+		<property name="czceOptions" value="${ctp32api.subscribe.czce.options}"></property>
+		<property name="czceCombination" value="${ctp32api.subscribe.czce.combination}"></property>
+		<property name="czceSpot" value="${ctp32api.subscribe.czce.spot}"></property>
+		<property name="czceEfp" value="${ctp32api.subscribe.czce.efp}"></property>
+		<property name="czceSpotoption" value="${ctp32api.subscribe.czce.spotoption}"></property>
+
+		<property name="ine" value="${ctp32api.subscribe.ine}"></property>
+		<property name="ineFutures" value="${ctp32api.subscribe.ine.futures}"></property>
+		<property name="ineOptions" value="${ctp32api.subscribe.ine.options}"></property>
+		<property name="ineCombination" value="${ctp32api.subscribe.ine.combination}"></property>
+		<property name="ineSpot" value="${ctp32api.subscribe.ine.spot}"></property>
+		<property name="ineEfp" value="${ctp32api.subscribe.ine.efp}"></property>
+		<property name="ineSpotoption" value="${ctp32api.subscribe.ine.spotoption}"></property>
+
+		<property name="log" value="${ctp32api.log}"></property>
+		<property name="beginTime" value="${ctp32api.log.begintime}"></property>
+		<property name="endTime" value="${ctp32api.log.endtime}"></property>
+		
+		<property name="monitorStartOneTime" value="${ctp32api.monitorStartOneTime}"></property>
+		<property name="monitorEndOneTime" value="${ctp32api.monitorEndOneTime}"></property>
+		<property name="monitorStartTwoTime" value="${ctp32api.monitorStartTwoTime}"></property>
+		<property name="monitorEndTwoTime" value="${ctp32api.monitorEndTwoTime}"></property>
+		<property name="monitorStartThreeTime" value="${ctp32api.monitorStartThreeTime}"></property>
+		<property name="monitorEndThreeTime" value="${ctp32api.monitorEndThreeTime}"></property>
+		<property name="monitorStartFourTime" value="${ctp32api.monitorStartFourTime}"></property>
+		<property name="monitorEndFourTime" value="${ctp32api.monitorEndFourTime}"></property>
+
+	</bean>
+
+</beans>
